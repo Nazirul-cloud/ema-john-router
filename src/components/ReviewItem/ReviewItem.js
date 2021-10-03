@@ -13,6 +13,7 @@ const ReviewItem = (props) => {
             <p>Price: {price}</p>
             <p>Quantity: {quantity}</p>
             <button onClick = {() => handleRemove(key)} className='btn-regular'>Remove</button>
+            {props.children}
             </div>
         </div>
     );
